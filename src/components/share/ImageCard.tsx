@@ -14,15 +14,15 @@ const ImageCard = async ({ image }: Props) => {
     <React.Fragment>
       {image && (
         <>
-          <div className="flex flex-col bg-neutral-300 w-56 min-h-80 animate-pulse rounded-xl p-4 gap-4">
+          <div className="flex flex-col bg-neutral-300 w-90 sm:w-56 min-h-80 animate-pulse rounded-xl p-4 gap-4">
             <div className="bg-neutral-400/50 w-full h-48 animate-pulse rounded-md ">
               <Image
                 src={image?.avatar}
                 key={image.id}
                 alt={image.id.toLocaleString()}
                 width={200}
-                height={100}
-                className="rounded-md object-contain"
+                height={48}
+                className="rounded-md object-cover w-full h-48"
               />
             </div>
             <div className="flex flex-col gap-2">
