@@ -4,7 +4,7 @@ import useCounterStore from "@/zustand/counterStore";
 import React from "react";
 
 const Counter = () => {
-  const { count, increment, setNumber } = useCounterStore((state) => state);
+  const { count, increment, setNumber } = useCounterStore((store) => store);
 
   return (
     <React.Fragment>
