@@ -1,16 +1,14 @@
 import ClientComponent from "@/components/tests/ClientComponent";
-import Counter from "@/components/tests/Counter";
 import React from "react";
 
-const HomePage = async () => {
+const TestPage = async () => {
   return (
     <React.Fragment>
-      <main className="w-full min-h-screen p-4">
-        <Counter />
+      <main>
         <ClientComponent />
       </main>
     </React.Fragment>
   );
 };
 
-export default HomePage;
+export default TestPage;

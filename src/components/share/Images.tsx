@@ -22,7 +22,7 @@ export const getImages = async (): Promise<Array<Image> | undefined> => {
 
 const Images = async () => {
   const images: Array<Image> | undefined = await getImages();
-  console.log(images);
+  // console.log(images);a
 
   return (
     <React.Fragment>
