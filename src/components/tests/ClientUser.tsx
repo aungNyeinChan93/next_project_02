@@ -69,15 +69,17 @@ const ClientUser = () => {
 
         {selectUser && (
           <>
-            <div className="flex justify-center w-full min-h-screen items-center z-50 bg-slate-600/50 rounded-2xl p-5 relative">
-              <button
-                type="button"
-                onClick={() => setSelectUser(null)}
-                className=" absolute top-3 right-3 text-red-600 bg-green-200 px-3 py-1 rounded-full"
-              >
-                X
-              </button>
-              <pre>{JSON.stringify(selectUser, null, 2)}</pre>
+            <div className="flex w-full h-screen justify-center items-center">
+              <div className=" w-[500px] mx-auto min-h-[400px]  z-50 bg-slate-600/50 rounded-2xl p-5 relative">
+                <button
+                  type="button"
+                  onClick={() => setSelectUser(null)}
+                  className=" absolute top-3 right-3 text-red-600 bg-green-200 px-3 py-1 rounded-full"
+                >
+                  X
+                </button>
+                <pre>{JSON.stringify(selectUser, null, 2)}</pre>
+              </div>
             </div>
           </>
         )}
