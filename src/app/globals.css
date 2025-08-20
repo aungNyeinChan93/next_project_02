@@ -25,6 +25,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
+@theme {
+  --color-primary: #ffffff;
+  --color-secondary: #000000;
+}
+
 h1,
 h2,
 h3,
@@ -37,4 +42,18 @@ p {
   font-family: var(--font-aclonica);
   font-size: 1rem;
   color: rgba(128, 128, 128, 0.842);
+}
+
+.test {
+  font-family: var(--font-mono);
+}
+
+.game {
+  font-family: var(--font-game);
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 inline w-30 rounded-2xl bg-slate-400 text-white;
+  }
 }

@@ -15,7 +15,7 @@ const poppins = Poppins({
 const UserPage = async () => {
   return (
     <React.Fragment>
-      <main className="w-full h-screen bg-slate-100/50">
+      <main className="w-full min-h-screen bg-secondary">
         <div className="flex justify-center items-center p-10">
           <div className="flex flex-col gap-3 ">
             <h3
@@ -36,6 +36,12 @@ const UserPage = async () => {
               corrupti quia esse neque consequatur iusto at, ipsam cumque omnis
               deserunt deleniti minus?
             </p>
+            <p className="tex-2xl game">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+              laborum maxime vel fugiat quidem at alias culpa adipisci, velit
+              incidunt laboriosam possimus sint aliquid, iusto repellat itaque
+              neque voluptates ab?
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8">
               {[1, 2, 3, 4, 5, 6, 7, 8].map((i, idx) => (
                 <Image
@@ -49,6 +55,9 @@ const UserPage = async () => {
                 />
               ))}
             </div>
+            <button type="button" className="btn-primary">
+              Click
+            </button>
           </div>
         </div>
       </main>
