@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       { hostname: "avatars.githubusercontent.com" },
       { hostname: "cdn.jsdelivr.net" },
+      { hostname: "fakestoreapi.com" }
     ]
   }
 };

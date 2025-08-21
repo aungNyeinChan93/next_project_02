@@ -4,8 +4,6 @@ import fs from 'fs'
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 
-
-
 export async function print() {
     console.log('testing print action');
 }

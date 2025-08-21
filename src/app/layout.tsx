@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Aclonica } from "next/font/google";
 import "./globals.css";
 import LocalFont from "next/font/local";
+import Navbar from "@/components/share/Navbar";
 
 const aclonica = Aclonica({
   variable: "--font-aclonica",
@@ -39,7 +40,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${game.variable} ${aclonica.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="container mx-auto">
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );
