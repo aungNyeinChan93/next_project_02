@@ -15,4 +15,4 @@ const useCounterStore = create<Store>((set) => {
     }
 })
 
-export default useCounterStore
+export default useCounterStore;
