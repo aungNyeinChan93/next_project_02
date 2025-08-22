@@ -8,7 +8,7 @@ import {
 import { type Quote } from "@/app/tests/quotes/page";
 
 interface Props {
-  quotes: Quote[];
+  quotes?: Quote[];
 }
 const QuoteAccordation = ({ quotes }: Props) => {
   return (

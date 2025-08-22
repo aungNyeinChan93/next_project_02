@@ -13,7 +13,7 @@ const ProductCard = ({ product }: Props) => {
       <Link href={`/tests/products/${product.id}`}>
         <div className="relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 bg-indigo-800 text-gray-50 p-5 rounded-lg">
           <div className="">
-            <div className="group-hover:scale-110 w-50 mx-auto h-60  duration-500">
+            <div className="group-hover:scale-110 w-50 mx-auto h-60  duration-900">
               <Image
                 src={product.image}
                 alt={product.category}
